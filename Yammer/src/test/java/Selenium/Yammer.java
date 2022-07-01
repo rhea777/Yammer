@@ -24,7 +24,7 @@ public class Yammer {
 static WebDriver driver;
 public static void main(String[] args) throws InterruptedException, IOException {
 
-System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\rheas\\OneDrive\\Desktop\\Selenium Assessment\\chromedriver.exe");
 ChromeOptions option= new ChromeOptions();
 option.addArguments("--disable-notifications");
 
@@ -33,7 +33,7 @@ driver.get("https://web.yammer.com/main/capgemini.com/");
 Thread.sleep(3000);
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 driver.manage().window().maximize();
-driver.findElement(By.name("loginfmt")).sendKeys("priya.patkar@capgemini.com");
+driver.findElement(By.name("loginfmt")).sendKeys("rhea.salih@capgemini.com");
 driver.findElement(By.id("idSIButton9")).click();
 Thread.sleep(10000);
 WebElement yesButton= driver.findElement(By.id("idSIButton9"));
