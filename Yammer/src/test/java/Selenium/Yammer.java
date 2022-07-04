@@ -33,7 +33,7 @@ driver.get("https://web.yammer.com/main/capgemini.com/");
 Thread.sleep(3000);
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 driver.manage().window().maximize();
-driver.findElement(By.name("loginfmt")).sendKeys("rhea.salih@capgemini.com");
+driver.findElement(By.name("loginfmt")).sendKeys("abc@institute.com");
 driver.findElement(By.id("idSIButton9")).click();
 Thread.sleep(10000);
 WebElement yesButton= driver.findElement(By.id("idSIButton9"));
